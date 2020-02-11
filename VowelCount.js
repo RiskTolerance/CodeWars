@@ -7,3 +7,9 @@ function getCount(str) {
   }
 
   //I should learn Regex OuO
+
+  //this solution is great for deaking with null returns!!
+
+  // function getCount(str) {
+  //   return (str.match(/[aeiou]/ig)||[]).length;
+  // }
