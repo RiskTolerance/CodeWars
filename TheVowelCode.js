@@ -34,3 +34,15 @@ function decode(string) {
   }
   return decoded;
 }
+
+// Top solution:
+// And this is why I need to do these every day. I forgot replace exsists D:
+// turn vowels into numbers
+function encode(string){
+    return string.replace(/[aeiou]/g, function (x) { return '_aeiou'.indexOf(x) });
+  }
+  
+  //turn numbers back into vowels
+  function decode(string){
+    return string.replace(/[1-5]/g, function (x) { return '_aeiou'.charAt(x) });
+  }
